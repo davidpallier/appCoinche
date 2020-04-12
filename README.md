@@ -18,4 +18,6 @@ Client to server calls :
 * Request resp :
   * Status : Waiting or Ready
   * Play a card : Card to play
+  * Make a bid : Bid value
 * See last trick
+* Pause the game
