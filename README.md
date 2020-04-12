@@ -5,14 +5,13 @@ Server to client calls :
   * Status
   * Play a card
   * Make a bid
+  * Update :
+   * Score
+   * Bid
+   * Round
+   * Trick
+   * Hand
 * Answer : Valid/Not valid
-* Update :
-  * Score
-  * Bid
-  * Round
-  * Trick
-  * Hand
-* Done
 
 Client to server calls :
 * Request resp :
