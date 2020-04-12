@@ -6,11 +6,11 @@ Server to client calls :
   * Play a card
   * Make a bid
   * Update :
-   * Score
-   * Bid
-   * Round
-   * Trick
-   * Hand
+    * Score
+    * Bid
+    * Round
+    * Trick
+    * Hand
 * Answer : Valid/Not valid
 
 Client to server calls :
