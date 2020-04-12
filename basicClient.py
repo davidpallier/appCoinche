@@ -1,10 +1,10 @@
 
 #Wait for server request
-If request is 'Status':
+if request is 'Status':
  status = waitForUserToUpdateStatus()
  sendToServer(request, status)
  
-Elif request is 'Play a card':
+elif request is 'Play a card':
  card = waitForUserToPlayCard()
  sendToServer(request, card)
  #wait for server answer
@@ -12,4 +12,14 @@ Elif request is 'Play a card':
   cardNotValid()
   card = waitForUserToPlayCard()
   sendToServer(request, card)
+  #wait for server answer
+
+elif request is 'Make a Bid'
+ bidValue = waitForUserToBid()
+ sendToServer(request, bidValue)
+ #wait for server answer
+ while answer is not valid:
+  bidNotValid()
+  bidValue = waitForUserToBid()
+  sendToServer(request, bidValue)
   #wait for server answer
