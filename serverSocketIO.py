@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, url_for, request
 from flask_socketio import SocketIO
 
 app = Flask(__name__)
+app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
@@ -17,7 +18,7 @@ def login():
         else:
             return render_template('session.html')
             
-    return render_template('login.html', error=error)
+    return render_template('login2.pug', error=error)
 
 @socketio.on('my event')
 def handle_my_custom_event(json, methods=['GET', 'POST']):
